@@ -1,6 +1,5 @@
-webpackJsonp([0],{
-
-/***/ 0:
+webpackJsonp([0],[
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15,25 +14,24 @@ webpackJsonp([0],{
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var h1 = _react2.default.DOM.h1;
+	// non JSX
+	// var { h1 } = React.DOM;
 
 	var Home = _react2.default.createClass({
 	  render: function render() {
-	    return h1({}, "Home");
+	    // non JSX
+	    // return h1({}, "Home");
+
+	    // JSX
+	    return _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Home'
+	    );
 	  }
 	});
 
 	_reactDom2.default.render(_react2.default.createElement(Home, null), document.getElementById('app'));
 
-/***/ },
-
-/***/ 158:
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(3);
-
 /***/ }
-
-});
+]);

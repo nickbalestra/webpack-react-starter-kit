@@ -1,11 +1,7 @@
 var webpack = require('webpack');
 
-var plugins = [
-  new webpack.optimize.CommonsChunkPlugin('public/common.js'),
-];
 
 module.exports = {
-
   entry: {
     Home: './app/Home.js',
     Profile: './app/Profile.js'
@@ -15,7 +11,9 @@ module.exports = {
     filename: 'public/[name].js'
   },
 
-  plugins: plugins,
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('public/shared.js'),
+  ],
 
   module: {
     loaders: [

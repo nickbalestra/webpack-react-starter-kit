@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var { h1 } = React.DOM;
+// non JSX
+// var { h1 } = React.DOM;
 
 var Home = React.createClass({
   render () {
-    return h1({}, "Home");
+    // non JSX
+    // return h1({}, "Home");
+
+    // JSX
+    return <h1>Home</h1>
   }
 });
 
