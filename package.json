@@ -12,6 +12,8 @@
     "react": "^0.14.1"
   },
   "devDependencies": {
+    "babel-core": "^6.0.14",
+    "babel-loader": "^6.0.0",
     "webpack": "^1.12.2"
   }
 }
