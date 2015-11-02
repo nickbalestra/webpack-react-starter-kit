@@ -4,15 +4,24 @@ webpackJsonp([1],[
 
 	'use strict';
 
-	var _react = __webpack_require__(1);
+	// import React from 'react';
+	// import ReactDOM from 'react-dom';
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(158);
+	// non JSX
+	var h1 = React.DOM.h1;
 
-	var _react2 = _interopRequireDefault(_react);
+	var Profile = React.createClass({
+	  render: function render() {
+	    // non JSX
+	    return h1({}, "Profile");
 
-	var _reactDom = __webpack_require__(158);
+	    // JSX
+	    // return <h1>Profile</h1>
+	  }
+	});
 
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	ReactDOM.render(React.createElement(Profile, null), document.getElementById('app'));
 
 /***/ }
 ]);
