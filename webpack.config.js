@@ -1,24 +1,19 @@
 var webpack = require('webpack');
 
-var plugins = [
-  new webpack.optimize.CommonsChunkPlugin('public/shared.js'),
-];
-
 module.exports = {
-  entry: {
-    Home: './app/Home.js',
-    Profile: './app/Profile.js'
-  },
-
+  entry: './app/index.js',
+  
   output: {
-    filename: 'public/[name].js'
+    filename: 'public/bundle.js'
   },
-
-  plugins: plugins,
 
   module: {
     loaders: [
       {test: /\.js$/, loader: "babel", query: {presets:['react', 'es2015']}}
     ]
   }
+
+  // plugins: [
+  //   new webpack.optimize.CommonsChunkPlugin('public/shared.js'),
+  // ]
 };
