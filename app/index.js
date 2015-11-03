@@ -1,7 +1,10 @@
+// For a full ES6 example of this very same file check out
+// https://github.com/nickbalestra/jspm-react-starter-kit/blob/master/app/index.js
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Home = React.createClass({
+var HelloWorld = React.createClass({
   getInitialState: function(){
     return {
       subject: 'World!'
@@ -15,5 +18,5 @@ var Home = React.createClass({
   }
 });
 
-ReactDOM.render(<Home/>, document.getElementById('app'));
+ReactDOM.render(<HelloWorld/>, document.getElementById('app'));
 
